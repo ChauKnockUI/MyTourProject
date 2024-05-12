@@ -7,8 +7,8 @@ app.use(cors());
 
 const PORT = 3001;
 
-app.get("/hello", (_req, res) => {
-  res.send("<h1>Chau gioi qua </h1>");
+app.get("/auth/hello", (_req, res) => {
+  res.send("<h1>Chau </h1>");
 });
 app.listen(PORT, (err) => {
   if (err) {
