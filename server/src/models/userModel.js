@@ -1,6 +1,9 @@
-const { default: mongoose } = require("mongoose");
+const { default: mongoose, Schema } = require("mongoose");
 
 const UserSchema = new mongoose.Schema({
+  bio: {
+    type: String,
+  },
   fullname: {
     type: String,
   },

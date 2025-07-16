@@ -5,5 +5,6 @@ const errorMiddleHandle = (err, _req, _res, next) => {
     statusCode,
     stack: err.stack,
   });
+  next();
 };
 module.exports = errorMiddleHandle;
